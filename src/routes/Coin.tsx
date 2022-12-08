@@ -81,9 +81,6 @@ const Tab = styled.span<{ isActive: boolean }>`
   }
 `;
 
-interface RouteState {
-  name: string;
-}
 interface InfoData {
   id: string;
   name: string;
