@@ -1,16 +1,8 @@
 import { useQuery } from "react-query";
-import {
-  Routes,
-  Route,
-  useLocation,
-  useParams,
-  useMatch,
-} from "react-router-dom";
+import { useLocation, useParams, useMatch, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { fetchCoinInfo, fetchCoinTickers } from "../api";
-import Chart from "./Chart";
-import Price from "./Price";
 
 const BackBtn = styled.button`
   padding: 10px;
@@ -88,9 +80,7 @@ const Tab = styled.span<{ isActive: boolean }>`
     display: block;
   }
 `;
-interface RouteParams {
-  coinId: any;
-}
+
 interface RouteState {
   name: string;
 }
@@ -214,14 +204,7 @@ function Coin() {
               <Link to={`/${coinId}/price`}>Price</Link>
             </Tab>
           </Tabs>
-          <Routes>
-            <Route path={`/:coinId/price`}>
-              <Price coinId={coinId} />
-            </Route>
-            <Route path={`/:coinId/chart`}>
-              <Chart coinId={coinId} />
-            </Route>
-          </Routes>
+          <Outlet context={{ coinId }} />
         </>
       )}
     </Container>

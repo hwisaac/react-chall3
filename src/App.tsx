@@ -1,9 +1,10 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import Router from "./Router";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { darkTheme, lightTheme } from "./theme";
 import { useState } from "react";
 import styled from "styled-components";
+import Coins from "./routes/Coins";
+import { Outlet } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -89,7 +90,7 @@ function App() {
       <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
         <ToggleBtn onClick={toggleDark}>Toggle</ToggleBtn>
         <GlobalStyle />
-        <Router />
+        <Outlet />
         <ReactQueryDevtools initialIsOpen={false} />
       </ThemeProvider>
     </>
