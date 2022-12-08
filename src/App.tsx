@@ -3,7 +3,6 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { darkTheme, lightTheme } from "./theme";
 import { useState } from "react";
 import styled from "styled-components";
-import Coins from "./routes/Coins";
 import { Outlet } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
