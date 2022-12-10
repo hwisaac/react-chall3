@@ -1,17 +1,10 @@
 {
   "files": {
-    "main.js": "/github.io/react-chall3/static/js/main.e4168364.chunk.js",
-    "main.js.map": "/github.io/react-chall3/static/js/main.e4168364.chunk.js.map",
-    "runtime-main.js": "/github.io/react-chall3/static/js/runtime-main.810d5a4c.js",
-    "runtime-main.js.map": "/github.io/react-chall3/static/js/runtime-main.810d5a4c.js.map",
-    "static/js/2.df405343.chunk.js": "/github.io/react-chall3/static/js/2.df405343.chunk.js",
-    "static/js/2.df405343.chunk.js.map": "/github.io/react-chall3/static/js/2.df405343.chunk.js.map",
+    "main.js": "/github.io/react-chall3/static/js/main.6487b1ef.js",
     "index.html": "/github.io/react-chall3/index.html",
-    "static/js/2.df405343.chunk.js.LICENSE.txt": "/github.io/react-chall3/static/js/2.df405343.chunk.js.LICENSE.txt"
+    "main.6487b1ef.js.map": "/github.io/react-chall3/static/js/main.6487b1ef.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.810d5a4c.js",
-    "static/js/2.df405343.chunk.js",
-    "static/js/main.e4168364.chunk.js"
+    "static/js/main.6487b1ef.js"
   ]
 }
